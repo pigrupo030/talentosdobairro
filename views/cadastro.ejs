@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formalário de registro</title>
+    <link rel="stylesheet" href="css/style_cadastro.css">
+</head>
+<body>
+    <div id="main-container">
+        <h1>Cadastre-se para fazer parte do Talentos do Bairro</h1>
+        <form method="POST" action="/add-salvarFormulario" id="register-form"> <!--adicionado method="POST" para receber dados do formulario no back-end-->
+            <div class="half-box spacing">  <!-- Classe de formulario de meia linha -->
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name" placeholder="Digite o seu primeiro nome"  data-required data-min-length="3" data-max-length="20" data-only-letters>
+            </div>
+            <div class="half-box">  <!-- Classe de formulario de meia linha -->
+                <label for="lastname spacing">Sobrenome</label>
+                <input type="text" name="lastname" id="lastname" placeholder="Digite o seu sobrenome" data-max-length="20">
+            </div>
+            <div class="full-box">  <!-- Classe de formulario de linha interia -->
+                <label for="cpf">CPF ou CNPJ</label>
+                <input type="text" name="cpf" id="cpf" placeholder="Digite seu CPF ou CNPJ sem pontos e traços" data-only-numbers>
+            </div>
+            <div class="full-box">  <!-- Classe de formulario de linha interia -->
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu e-mail" data-email-validate>
+            </div>
+            <div class="full-box">  <!-- Classe de formulario de linha interia -->
+                <label for="address">Endereço</label>
+                <input type="text" name="address" id="address" placeholder="Digite seu Endereço" data-required>
+            </div>
+            <div class="half-box spacing">  <!-- Classe de formulario de meia linha -->
+                <label for="numero">Numero</label>
+                <input type="text" name="numero" id="numero" placeholder="Digite o numero" data-only-numbers>
+            </div>
+            <div class="half-box spacing">  <!-- Classe de formulario de meia linha -->
+                <label for="Cep">Cep</label>
+                <input type="text" name="cep" id="cep" placeholder="Digite o cep da rua" data-only-numbers>
+            </div>
+            <div class="full-box">  <!-- Classe de formulario de linha interia -->
+                <label for="complemento">Complemento</label>
+                <input type="text" name="complemento" id="complemento" placeholder="Digite se é casa, apartamento, etc...">
+            </div>
+            <div class="half-box spacing">  <!-- Classe de formulario de meia linha -->
+                <label for="city">Cidade</label>
+                <input type="text" name="city" id="city" placeholder="Digite a sua cidade"  data-max-length="30" data-required>
+            </div>
+            <div class="half-box">  <!-- Classe de formulario de meia linha -->
+                <label for="state">Estado</label>
+                <input type="text" name="state" id="state" placeholder="Digite seu estado" data-only-letters data-max-length="30" data-required>
+            </div>
+            <div class="half-box spacing">  <!-- Classe de formulario de meia linha -->
+                <label for="password">Senha</label>
+                <input type="password" name="password" id="password" placeholder="Cadastre a sua senha" data-required data-password-validate>
+            </div>
+            <div class="half-box">  <!-- Classe de formulario de meia linha -->
+                <label for="passconfirmation">Confirmação de senha</label>
+                <input type="password" name="passconfirmation" id="passconfirmation" placeholder="Confirme a sua senha" data-required data-equal="password">
+            </div>
+            <div class="full-box">  <!-- Classe de formulario de linha interia -->
+                <input type="checkbox" name="agreement" id="agreement">
+                <label for="agreement" id="agreement-label">Eu li e concordo com os <a href="#">termos de uso</a></label>
+            </div>
+            <div class="full-box">  <!-- Classe de formulario de linha interia -->
+                <input type="submit" name="agreement" id="btn-submit" value="Registrar usuário">
+            </div>
+        </form>
+    </div>
+    <p class="error-validation template"></p> <!--O pai vai meter um louco e validar aqui kkkk-->
+    <script src="js/scripts.js"></script>
+</body>
+</html>
