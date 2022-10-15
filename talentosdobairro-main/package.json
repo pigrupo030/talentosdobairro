@@ -1,0 +1,29 @@
+{
+  "name": "pigrupo030",
+  "version": "1.0.0",
+  "description": "Projeto Integrador UNIVESP grupo 030",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/pigrupo030/talentos-do-bairro.git"
+  },
+  "keywords": [
+    "projetointegradorgrupo030"
+  ],
+  "author": "Alunos UNIVESP grupo 030",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pigrupo030/talentos-do-bairro/issues"
+  },
+  "homepage": "https://github.com/pigrupo030/talentos-do-bairro#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.20.1"
+  }
+}
