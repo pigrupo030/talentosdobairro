@@ -103,7 +103,7 @@
 
 /*media carry - RESOLUÇÃO DA MAIS ALTA PARA A MENOR */
 
-@media(min-width: 768px){
+@media(min-width: 640px/*768px*/){
     #slider .carousel-caption{
         bottom: 15em;
     }
