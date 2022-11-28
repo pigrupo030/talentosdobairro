@@ -103,7 +103,7 @@
 
 /*media carry - RESOLUÇÃO DA MAIS ALTA PARA A MENOR */
 
-@media screen and (min-width: 768px) and (max-width: 1080px){ /* inserção de resolução min e max de acordo com tela */
+@media (min-width: 768px) and (max-width: 1080px){ /* inserção de resolução min e max de acordo com tela */
     #slider .carousel-caption{
         bottom: 10em;
     }
