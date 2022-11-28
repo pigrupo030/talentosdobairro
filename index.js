@@ -56,7 +56,7 @@ app.post("/add-salvarFormulario", function(req, res){
     }).then(function(){
       res.send("Cadastro com sucesso total!!!!")
     }).catch(function(errp){
-      res.send("Informações não cadastradas - houve algum erro no processo!!!!!!!!!!!!! - Fudeu!!!!!!!!!!!!!!")
+      res.send("Informações não cadastradas - Reveja se seus dados estão OK")
     })
        
 });
