@@ -103,13 +103,16 @@
 
 /*media carry - RESOLUÇÃO DA MAIS ALTA PARA A MENOR */
 
-@media (min-width: 768px){
+@media screen and (min-width: 768px) and (max-width: 1080px){ /* inserção de resolução min e max de acordo com tela */
     #slider .carousel-caption{
-        bottom: 15em;
+        bottom: 10em;
     }
     #slider .carousel-caption h5 {
-        font-size: 2.5em;
-        text-shadow: #000 2px 2px; 
+        text-alingn: center;
+        font-size: 2.4em;
+        text-shadow: #000 2px 2px;
+        width: auto;
+        margin: auto;
     }
     #slider .btn{
         padding: 0.6em 1.6em;
